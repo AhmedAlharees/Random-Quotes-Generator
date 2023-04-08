@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Alex-Brush);
+}
+
+:root{
+    --Alkatra: font-family: 'Alkatra', cursive;
+    --Lobster-Two: font-family: 'Lobster Two', cursive;
+    --body-color: #F4F1DE
+}
+
+body{
+    background-color: var(--body-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    font-size: clamp(2rem, 2rem + 2vw, 4rem);
+    color: #3D405B;
+}
+.quote-style{
+    font-family: 'Lobster Two', cursive;
+}
+.gen-style{
+    font-family: 'Alkatra', cursive;
+}
+
+.quote-card{
+    max-width: 550px;
+    min-height: 350px;
+    border-radius: 5px 25px 80px 5px;
+    box-shadow: 5px 10px 5px rgb(186, 186, 186);
+    border: 1px solid black;
+    border-right: 10px double black;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-size: 18px 18px;
+    background-image:  repeating-linear-gradient(0deg, hsla(3, 99%, 48%, 0.048), hsla(0, 92%, 54%, 0.181) 0.9px, #e5e5f7 0.9px, #e5e5f7);
+}
+
+.quote-card:hover{
+    box-shadow: 10px 10px 10px rgb(52, 52, 52);
+}
+
+.quote-container{
+    width: 80%;
+}
+
+.quote{
+    text-align: center;
+    font-family: 'Alkatra', cursive;
+    font-size: clamp(1.5rem, .5rem + 2vw, 2rem);
+    margin-top: 1rem;
+}
+
+
+.author{
+    font-family: 'Alkatra', cursive;
+    font-weight: 400;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-container{
+    margin: 1rem;
+    text-align: center;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 50%;
+    background-image: url('./images/repeat-solid.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    color: #3D405B;
+    background-color: #E07A5F;
+    box-shadow: 3px 5px 3px #F2CC8F;
+    transition: .3s;
+}
+
+.btn:hover{
+    box-shadow: 8px 10px 8px #F2CC8F;
+    cursor: pointer;
+}
+
+.btn:active{
+    background-color: #793a28;
+}
+
+.dev-name{
+    font-family: 'Alkatra', cursive;
+}
+
+.links-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+.github img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.frontend-mentor img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+:is(.github, .frontend-mentor) img{
+    box-shadow: 5px 5px 5px #F2CC8F;
+    transition: .3s;
+}
+:is(.github, .frontend-mentor) img:hover{
+    box-shadow: 5px 5px 5px #e79e27;
+}
