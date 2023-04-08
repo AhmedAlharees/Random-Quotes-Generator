@@ -1,4 +1,4 @@
-# Random Quotes Generator using : HTML, CSS , and vanil JavaScript
+# Random Quotes Generator using : HTML, CSS , and vanila JavaScript
 
 ## Author: Ahmed Alharees
 ## Date: 2023/8/4
