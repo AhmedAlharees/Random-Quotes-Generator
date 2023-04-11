@@ -4,7 +4,7 @@ const quote = document.querySelector(".quote");
 const author = document.querySelector(".author");
 
 function rand() {
-  let randomValue = Math.ceil(Math.random() * 100 + 1);
+  let randomValue = Math.trunc(Math.random() * 1000 + 1);
   return randomValue;
 }
 
